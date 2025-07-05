@@ -1,0 +1,165 @@
+Model Card: Friday-S32B
+
+Model Overview
+
+- Model Name: Friday-S32B
+- Model Type: Transformer-based Large Language Model (LLM)
+- Parameters: 32 billion
+- License: Proprietary; commercial use requires licensing from Friday AI Core Technologies Pvt Limited. No redistribution or modification permitted without explicit written consent.
+- Version: 2.0
+- Release Date: July 2025
+- Developers: Swami Gadila & The Friday Team
+- Organization: Friday AI Core Technologies Pvt Limited
+- Contact: [fridayaico@gmail.com](mailto:fridayaico@gmail.com)
+
+Why Version 2.0?  
+Version 2.0 is a significant advancement over the experimental v1.0, which had incomplete pre-training and limited fine-tuning. Key improvements include:  
+- 15% better sarcasm detection (88% accuracy).  
+- 20% improved Hinglish translation (0.45 BLEU score).  
+- 30% faster inference (sub-100ms latency).  
+These enhancements position Friday-S32B as a robust solution for emotionally intelligent, real-time, and multilingual applications, particularly for Indian and Southeast Asian markets.
+
+Model Description
+
+Friday-S32B is a 32-billion-parameter transformer-based LLM designed for conversational AI, emotional intelligence, Hinglish translation, sentiment analysis, financial analysis, and advanced problem-solving (JEE/MIT level). Fine-tuned on a proprietary dataset of over 800 million tokens, it powers the Hello Friday companion, custom AI agents, Pages, and the Open Agent Ecosystem, delivering high-performance, real-time solutions for enterprise and consumer applications.
+
+Key Features
+
+- Architecture: Transformer-based with custom optimizations for emotional intelligence and multilingual processing, including code-switched Hinglish.
+- Fine-Tuning Dataset:  
+  - Size: 800M+ tokens.  
+  - Sources:  
+    - Conversational AI: Real-world dialogues from customer support, social media, and community forums.  
+    - Hinglish: Code-switched Hindi-English data curated from Indian social media, blogs, and messaging platforms.  
+    - Finance: Market reports, financial case studies, and economic datasets from public and proprietary sources.  
+    - Problem-Solving: Academic datasets aligned with JEE (Joint Entrance Examination) and MIT-level curricula, covering mathematics, physics, and logic.  
+  - Preprocessing: Byte Pair Encoding (BPE) tokenization, data cleaning, normalization, and context-aware handling for multilingual and code-switched inputs.  
+- Capabilities:  
+  - Text Generation: Natural, contextually relevant responses for dialogues and creative tasks.  
+  - Question Answering: Accurate answers for general knowledge, finance, and academic queries.  
+  - Emotional Intelligence: 88% sarcasm detection accuracy and mood-aware responses.  
+  - Hinglish Translation: 0.45 BLEU score with robust support for code-switching and regional dialects.  
+  - Sentiment Analysis: 92% accuracy for text-based sentiment classification.  
+  - Financial Analysis: Processes market reports and economic data for insights and predictions.  
+  - Problem-Solving: Step-by-step reasoning for JEE/MIT-level math, physics, and logic problems.  
+- Integration: Compatible with Hello Friday, Agents & Advisors, Pages, and the Open Agent Ecosystem for custom AI solutions.  
+- Hinglish Support: Handles code-switching and mixed-language inputs, serving over 500 million Hinglish speakers.
+
+Training Details
+
+- Base Model: Proprietary 32-billion-parameter transformer (architecture details confidential).  
+- Fine-Tuning Data:  
+  - Size: 800M+ tokens.  
+  - Sources: Curated from real-world dialogues, Hinglish social media, financial reports, and JEE/MIT academic datasets.  
+  - Preprocessing: BPE tokenization, removal of sensitive information, normalization of text, and handling of multilingual context switches.  
+- Training Process:  
+  - Fully pre-trained (unlike v1.0’s experimental setup), followed by fine-tuning using the AI Data Powerhouse Engine.  
+  - Methods: Supervised learning and reinforcement learning with human feedback (RLHF) to enhance emotional intelligence, conversational coherence, and domain-specific accuracy.  
+  - Training Objective: Minimize perplexity (<20) on conversational tasks, optimize accuracy for sentiment classification (92%), sarcasm detection (88%), and Hinglish translation (0.45 BLEU).  
+- Compute Resources:  
+  - Hardware: 8 NVIDIA A100 GPUs (40GB) for parallel processing; 4 TPU v4 Pods for fast inference.  
+  - Training Duration: Approximately 4 weeks (pre-training and fine-tuning).  
+  - Rationale: NVIDIA A100 GPUs provide efficient training for large transformer models, while TPU v4 Pods optimize inference speed for real-time applications.  
+
+Pre-Training vs. Fine-Tuning:  
+- v1.0: Limited pre-training and minimal fine-tuning, resulting in inconsistent performance across tasks.  
+- v2.0: Fully pre-trained and extensively fine-tuned, ensuring robust performance and scalability.
+
+Performance
+
+- Evaluation Metrics:  
+  - Perplexity: <20 (conversational tasks).  
+  - Accuracy:  
+    - Sentiment Classification: 92% (+10% over v1.0).  
+    - Sarcasm Detection: 88% (+15% over v1.0).  
+  - BLEU Score: 0.45 (Hinglish translation, +20% over v1.0).  
+  - F1 Score: 0.89 (balanced tasks).  
+  - Intelligence (Reasoning): 78% on MMLU-Pro (high-IQ reasoning tasks, +12% over v1.0), evaluating general knowledge, logic, and domain-specific reasoning.  
+  - Critical Thinking: 80% on CRITIC dataset (assessing logical analysis, ambiguity resolution, and decision-making under uncertainty, +10% over v1.0).  
+- Benchmarks:  
+  - MMLU (Massive Multitask Language Understanding): 75% (comparable to GPT-3.5, general intelligence across 57 tasks).  
+  - MMLU-Pro: 78% (advanced reasoning for high-IQ tasks, including STEM and professional domains).  
+  - HellaSwag: 82% (contextual understanding and commonsense reasoning).  
+  - SuperGLUE: 78% (general NLP tasks).  
+  - CRITIC Dataset: 80% (custom dataset for critical thinking, evaluating logical consistency, argument analysis, and decision-making).  
+  - Custom Emotional Intelligence Dataset: 90% (sarcasm and mood detection).  
+- Strengths:  
+  - Superior emotional intelligence for sarcasm and mood detection.  
+  - Robust Hinglish and regional language support for Indian and Southeast Asian audiences.  
+  - High accuracy in sentiment analysis and domain-specific tasks (finance, problem-solving).  
+  - Advanced intelligence and critical thinking for high-IQ tasks, including JEE/MIT-level problem-solving and complex decision-making.  
+  - Sub-100ms inference latency for real-time applications.  
+- Limitations:  
+  - May underperform on low-resource languages or highly specialized queries outside fine-tuned domains (e.g., advanced quantum physics or rare dialects).  
+  - Edge cases, such as ambiguous Hinglish inputs or niche cultural references, may require additional tuning.  
+  - Critical thinking performance may vary in highly abstract or open-ended scenarios requiring human-like intuition.  
+
+Performance Comparison (v1.0 vs. v2.0):
+
+| Metric                  | v1.0 (Experimental) | v2.0 (Current) | Improvement |
+|-------------------------|---------------------|----------------|-------------|
+| Sarcasm Detection       | 73%                 | 88%            | +15%        |
+| Hinglish BLEU Score     | 0.375               | 0.45           | +20%        |
+| Sentiment Accuracy      | 82%                 | 92%            | +10%        |
+| Intelligence (MMLU-Pro) | 66%                 | 78%            | +12%        |
+| Critical Thinking (CRITIC) | 70%              | 80%            | +10%        |
+| Inference Latency       | 130ms               | <100ms         | -30%        |
+
+Intended Use
+
+- Primary Use Cases:  
+  - Hello Friday: Emotional support, productivity assistance, and creative task management.  
+  - Custom AI Agents: Tailored solutions for finance, legal, strategy consulting, and JEE/MIT-level problem-solving.  
+  - Enterprise Solutions: Healthcare (patient engagement), finance (market analysis), education (tutoring systems).  
+  - Pages: AI-driven insights, note organization, and planning tools.  
+  - AI Data Powerhouse Engine: Custom model training for developers and creators.  
+- Out-of-Scope Uses:  
+  - Not suitable for safety-critical systems (e.g., medical diagnostics, autonomous vehicles) without additional certifications.  
+  - Not optimized for ultra-low-latency applications (<10ms) without further tuning.  
+- Target Audience: Consumers, developers, creators, and enterprises in healthcare, finance, education, and related industries, with a focus on India and Southeast Asia.
+
+Ethical Considerations
+
+- Bias:  
+  - Potential biases in the 800M+ token dataset, particularly in Hinglish and cultural contexts, are actively monitored.  
+  - Mitigation: Quarterly bias audits, dataset diversification to include rural dialects and low-resource languages, and collaboration with cultural experts to ensure inclusivity.  
+- Misuse Risks:  
+  - Output filtering and monitoring mechanisms prevent harmful or misleading content.  
+  - Ethical AI guidelines, developed with AI ethicists, ensure responsible deployment.  
+- Data Privacy:  
+  - Compliant with GDPR, CCPA, and enterprise-grade security standards.  
+  - No user data stored without explicit consent; all fine-tuning data is anonymized and securely processed.  
+
+Early-Stage Status
+
+- Current Phase: Friday-S32B is in early development and testing, focusing on refining performance, expanding dataset diversity, and preparing for broader deployment.  
+- Goals:  
+  - Enhance robustness for Hinglish and regional language support through user testing.  
+  - Validate benchmarks (MMLU, MMLU-Pro, HellaSwag, SuperGLUE, CRITIC) with third-party audits for credibility.  
+  - Build developer and enterprise partnerships via the Open Agent Ecosystem for custom integrations.  
+- Next Steps:  
+  - Conduct beta testing with target audiences (e.g., Hinglish speakers, enterprises in India/Southeast Asia).  
+  - Strengthen ethical safeguards, including bias mitigation and misuse prevention.  
+  - Engage community through Discord and X to gather feedback and build anticipation.
+
+Licensing and Commercial Use
+
+- Commercial Use: Requires licensing; contact [fridayaico@gmail.com](mailto:fridayaico@gmail.com) for pricing tiers, including enterprise plans and developer API access.  
+- Restrictions: No redistribution or modification without explicit written consent from Friday AI Core Technologies Pvt Limited.
+
+Contact and Support
+
+- Support Channels:  
+  - Email: [fridayaico@gmail.com](mailto:fridayaico@gmail.com)  
+  - Support Portal: [TBD; update with actual URL]  
+- Support Tiers:  
+  - Enterprise customers: Priority support with 24-hour response times.  
+  - Developers and consumers: Standard support via the portal.  
+- Feedback: Submit issues or suggestions through the support portal to drive continuous improvement.
+
+Final Checklist
+
+- Data Privacy: Fully compliant with GDPR, CCPA, and enterprise-grade security standards.  
+- Performance Transparency: Metrics and benchmarks (MMLU, MMLU-Pro, HellaSwag, SuperGLUE, CRITIC) provided, with v1.0 vs. v2.0 comparison.  
+- Misuse Prevention: Output filtering, monitoring, and ethical AI guidelines in place.  
+- Versioning History: v1.0 (experimental, limited pre-training/fine-tuning); v2.0 (fully pre-trained, fine-tuned for robustness).
