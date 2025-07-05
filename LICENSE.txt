@@ -1,0 +1,10 @@
+Friday AI Core Proprietary License v1.0
+
+This model and all associated assets (Friday-S32B) are proprietary.
+Redistribution, hosting, modification, or usage for commercial purposes is prohibited
+without express written permission from Friday AI Core Technologies Pvt Ltd.
+
+To request licensing: fridayaico@gmail.com
+
+© 2025 Friday AI Core Technologies Pvt Ltd.
+All rights reserved.
